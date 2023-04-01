@@ -89,6 +89,7 @@
         <p>pesquisar frases no arquivo "grep + -i + 'palavra-chave entre aspas simples' + nome do arquivo"</p>
         <p>mostra tudo menos a palavra-chave pesquisada "grep + -iv + 'palavra-chave entre aspas simples' + nome do arquivo"</p>
         <p>mostra quantidade de vezes que a palavra-chave repete "grep + -ic + 'palavra-chave entre aspas simples' + nome do arquivo"</p>
+        <p>mostra palavras que iniciam co a letra indicada "grep + letra + nome do arquivo +| + sort"</p>
         <p>mostra as 10 primeiras linhas "head + nome do arquivo"</p>
         <p>mostra as 5 primeiras linhas "head + -5 + nome do arquivo"</p>
         <p>mostra as 10 ultimas linhas "tail + nome do arquivo"</p>
@@ -102,20 +103,32 @@
         <h2>Buscando ajuda no terminal</h2>
         <p>Mostra pasta e oque tem dentro da pasta "ls + *"</p>
         <p>Pesquisa ocultando o 1º caractere "ls + ?nome do arquivo"</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+
+        <h2>inputs e outputs no terminal.</h2>
+        <p>Inserir dados em um arquivo "cat + > + nome-do-arquivo" insira os valores e depois Ctrl + C para sair</p>
+        <p>adicionar mais dados em um arquivo "cat + >> + nome-do-arquivo" insira os valores e depois Ctrl + C para sair</p>
+        <p>criar um novo arquivo com a junção de 2 arquivos "cat + nome-do-arquivo1 + nome-do-arquivo2 + > + nome-do-arquivo-destino"</p>
+        <p>organiza por ordem alfabetica, no terminal "sort + < + nome-do-arquivo"</p>
+        <p>organiza por ordem alfabetica, detro de outro arquivo "sort + < + nome-do-arquivo + > + nome-do-arquivo-destino"</p>
+        <p>saber quem tem permissão no arquivo "who"</p>
+        <p>saber quem tem permissão no arquivo e organiza "who | sort"</p>
+        <p>saber todos usuarios no pc "who | sort"</p>
+
+        <h2>find</h2>
+        <p>Listar todos os arquivos que terminam em .txt. "find . -name "*.txt""</p>
+        <p>localizar todos os diretórios "find . -type d"</p>
+        <p>localizar todos os arquivos "find . -type f"</p>
+        <p>localizar tanto arquivos quanto diretórios que comecem por algum trecho "find ./teste -name "exemplo*""</p>
+        <p>localizar somente arquivos que comecem por algum trecho "find ./teste -type f -name "exemplo*""</p>
+        <p>localizar somente diretórios que comecem por algum trecho "find ./teste -type d -name "exemplo*""</p>
+
+        <h2>history</h2>
+        <p>Mostra o histórico de comandos "history"</p>
+        <p>Pega os últimos 10 comandos "history | tail"</p>
+
+        <2>echo</2>
+        <p>apenas repete "echo "Este é um teste""</p>
+        <p>colocar textos dentro de arquivos "echo "Este é mais um teste" > teste.txt"</p>
         <p></p>
         <p></p>
         <p></p>
