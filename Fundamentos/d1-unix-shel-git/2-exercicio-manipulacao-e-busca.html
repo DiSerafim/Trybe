@@ -9,101 +9,118 @@
         <!-- Conteúdo -->
         <header>Unix & Shel</header>
         <h2>Exercício - Manipulação e busca</h2>
+        <h2>
+            Parte I
+            Crie um novo diretório chamado unix_tests_search e navegue até ele. <br>
 
+            Na pasta unix_tests_search, baixe um arquivo com os nomes de todos os países do mundo utilizando o comando curl. Conheça mais sobre esse comando nesse link. <br>
+
+            └─$ mkdir unix_tests_search && cd unix_tests_search <br>
+
+            curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+        </h2>
 
         <h3>
             1. Mostre todo o conteúdo do arquivo countries.txt na tela.
         </h3>
         <p>
-            
+            └─$ cat countries.txt
         </p>
         
         <h3>
             2. Mostre o conteúdo de countries.txt, página por página, até encontrar a Zambia.
         </h3>
         <p>
-            
+            └─$ less countries.txt + tecla spaço + q para sair
+            # ou...
+            └─$ more countries.txt
         </p>
         
         <h3>
             3. Mostre novamente o conteúdo de countries.txt página por página, mas agora utilize um comando para buscar por Zambia.
         </h3>
         <p>
-            
+            └─$ less countries.txt
+            # dentro do arquivo, digite /Zambia
+            # ou...
+            └─$ more countries.txt
         </p>
         
         <h3>
             4. Busque por Brazil no countries.txt.
         </h3>
         <p>
-            
+            └─$ grep Brazil countries.txt
         </p>
         
         <h3>
             5. Busque novamente por brazil, mas agora utilize o lower case e não considere letras maiúsculas ou minúsculas.
         </h3>
         <p>
-            
+            └─$ grep -i brazil countries.txt
         </p>
+
+        <h2>
+            Parte II
+            Crie um novo arquivo chamado phrases.txt e adicione algumas frases à sua escolha.
+        </h2>
         
         <h3>
             6. Busque pelas frases que não contenham a palavra fox.
         </h3>
         <p>
-            
+            └─$ grep -v 'fox' phrases.txt
         </p>
         
         <h3>
             7. Conte o número de palavras do arquivo phrases.txt.
         </h3>
         <p>
-            
+            └─$ wc -w phrases.txt
         </p>
         
         <h3>
             8. Conte o número de linhas do arquivo phrases.txt.
         </h3>
         <p>
-            
-            
-            
-            
+            └─$ wc -l phrases.txt 
         </p>
         
         <h3>
             9. Crie os arquivos empty.tbt e empty.pdf.
         </h3>
         <p>
-            
+            └─$ touch empty.tbt empty.pdf   
         </p>
         
         <h3>
             10. Liste todos os arquivos do diretório unix_tests_search.
         </h3>
         <p>
-            
+            └─$ ls  
         </p>
              
         <h3>
             11. Liste todos os arquivos que terminem com txt.
         </h3>
         <p>
-            
-            
+            └─$ ls *.txt
         </p>
         
         <h3>
             12. Liste todos os arquivos que terminem com tbt ou txt.
         </h3>
         <p>
-            
+            └─$ ls *.txt *.tbt
+            Ou
+            └─$ ls *.t?t   
         </p>
         
         <h3>
             13. Acesse o manual do comando ls.
         </h3>
         <p>
-            
+            └─$ man ls   
         </p>
     </body>
 </html>
