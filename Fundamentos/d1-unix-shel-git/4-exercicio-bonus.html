@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercício - Unix & Shel</title>
+    </head>
+
+    <body>
+        <!-- Conteúdo -->
+        <header>Unix & Shel</header>
+        <h2>Exercício - Bônus</h2>
+
+        <h3>
+            1. Abra o terminal e execute o comando sudo apt-get install cmatrix, execute o comando cmatrix. Aperte ctrl+c para voltar ao terminal. 
+        </h3>
+        <p>
+            └─$ sudo apt-get install cmatrix
+            └─$ cmatrix
+        </p>
+
+        <h3>
+            2. Execute o comando sudo apt-get install fortune. Após a instalação, crie um arquivo de texto chamado fortune.txt
+            Obs: Use o comando fortune e o operador >.
+        </h3>
+        <p>
+            └─$ sudo apt-get install fortune
+            └─$ touch fortune.txt
+            └─$ fortune > fortune.txt 
+        </p>
+
+        <h3>
+            3. Conte o número de palavras que a frase da sua sorte do dia tem.
+            Obs: Use o comando wc.
+        </h3>
+        <p>
+            └─$ wc -w fortune.txt
+        </p>
+
+        <h3>
+            4. Execute o comando sudo apt-get install sl. Após a instalação, execute o comando sl. Agora, tente sl -f.
+        </h3>
+        <p>
+            └─$ sudo apt-get install sl  
+            └─$ sl 
+            └─$ sl -f     
+        </p>
+
+        <h3>
+            5. Execute o comando sudo apt-get install cowsay. Após a instalação, execute o comando cowsay e algo que você queira falar. Agora, faça a vaquinha dizer a frase que está gravada no arquivo fortune.txt.
+        </h3>
+        <p>
+            └─$ sudo apt-get install cowsay 
+            └─$ cowsay estudando unix e shel com a trybe
+            └─$ tail fortune.txt | cowsay
+        </p>
+
+        <h3>
+            6. Descubra os fatores primos usando o comando factor e, em seguida, o número 42.
+        </h3>
+        <p>
+            └─$ factor
+            └─$ factor 42     
+        </p>
+
+        <h3>
+            7. Veja como fica a sua sorte do dia ao contrário. Para isso, utilize o comando rev.
+        </h3>
+        <p>
+            └─$ tail fortune.txt | rev
+        </p>
+
+        <h3>
+            8. Execute o comando telnet towel.blinkenlights.nl e espere alguns segundos.
+        </h3>
+        <p>
+            └─$ telnet towel.blinkenlights.nl
+        </p>
+    </body>
+</html>
