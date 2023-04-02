@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercício - Unix & Shel</title>
+    </head>
+
+    <body>
+        <!-- Conteúdo -->
+        <header>Unix & Shel</header>
+        <h2>Exercício - Comandos de input e output</h2>
+
+        <h3>
+            1. Crie a pasta unix_tests_skills e navegue até ela.
+        </h3>
+        <p>
+            └─$ mkdir unix_tests_skills
+        </p>
+
+        <h3>
+            2. Crie um arquivo de texto pelo terminal com o nome skills2.txt e adicione os valores Internet, Unix e Bash, cada um em sua linha.
+        </h3>
+        <p>
+            └─$ cat > skills2.txt
+            Ou
+            └─$ touch skills2.txt
+            └─$ echo "Internet" >> skills2.txt
+            └─$ echo "Unix" >> skills2.txt
+            └─$ echo "Bash" >> skills2.txt
+        </p>
+
+        <h3>
+            3. Adicione mais 5 itens à sua lista de skills e, depois, imprima a lista ordenada no terminal.
+        </h3>
+        <p>
+            └─$ cat >> skills2.txt
+            Ou
+            └─$ echo "HTML" >> skills2.txt
+            └─$ echo "CSS" >> skills2.txt
+            └─$ echo "JavaScript" >> skills2.txt
+            └─$ echo "React" >> skills2.txt
+            └─$ echo "SQL" >> skills2.txt
+            └─$ sort < skills2.txt
+        </p>
+
+        <h3>
+            4. Conte o número de linhas do arquivo skills2.txt.
+        </h3>
+        <p>
+            └─$ cat skills2.txt | wc -l
+        </p>
+
+        <h3>
+            5. Crie um arquivo chamado top_skills.txt usando o skills2.txt. Ele deve conter as 3 primeiras skills em ordem alfabética.
+        </h3>
+        <p>
+            └─$ └─$ sort < skills2.txt | head -n 3 > top_skills.txt
+        </p>
+
+        <h3>
+            6. Crie um novo arquivo chamado phrases2.txt pelo terminal e adicione algumas frases de sua escolha.
+        </h3>
+        <p>
+            └─$ cat > phrases2.txt
+            Ou
+            └─$ touch phrases2.txt
+            └─$ echo "The quick brown fox jumps over the lazy dog." > phrases2.txt
+            └─$ echo "Quick fox jumps nightly above wizard." >> phrases2.txt
+            └─$ echo "The quick onyx goblin jumps over the lazy dwarf." >> phrases2.txt
+        </p>
+
+        <h3>
+            7. Conte o número de linhas que contêm as letras br.
+        </h3>
+        <p>
+            └─$ grep br phrases2.txt | wc -l   
+        </p>
+
+        <h3>
+            8. Conte o número de linhas que não contêm as letras br.
+        </h3>
+        <p>
+            └─$ grep -v br phrases2.txt | wc -l  
+        </p>
+
+        <h3>
+            9. Adicione dois nomes de países ao final do arquivo phrases2.txt.
+        </h3>
+        <p>
+            └─$ cat >> phrases2.txt
+            Ou
+            └─$ echo "Japão" >> phrases2.txt
+            └─$ echo "Austrália" >> phrases2.txt
+        </p>
+
+        <h3>
+            10. Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt.
+        </h3>
+        <p>
+            └─$ cat phrases2.txt ../unix_tests_search/countries.txt > bunch_of_things.txt
+        </p>
+
+        <h3>
+            11. Ordene o arquivo bunch_of_things.txt.
+        </h3>
+        <p>
+            └─$ sort bunch_of_things.txt -o bunch_of_things.txt
+        </p>
+    </body>
+</html>
